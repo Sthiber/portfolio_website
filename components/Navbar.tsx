@@ -39,7 +39,8 @@ export function Navbar() {
     },
     {
       name: "Resume",
-      href: "#resume",
+      href: "/Sthiber_Guevara_Resume.pdf",
+      external: true,
     },
     {
       name: "Contact",
@@ -89,6 +90,8 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300"
             >
               {link.name}
