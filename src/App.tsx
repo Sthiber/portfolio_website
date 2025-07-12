@@ -1,6 +1,7 @@
 import { Hero } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 import { About } from "../components/About";
+import { Skills } from "../components/Skills";
 function App() {
   return (
     <div className="bg-[#0f1116] text-white min-h-screen w-full">
@@ -8,6 +9,7 @@ function App() {
       <main className="w-full">
         <Hero />
         <About />
+        <Skills />
       </main>
     </div>
   );
