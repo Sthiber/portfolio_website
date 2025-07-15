@@ -19,34 +19,23 @@ export function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   //   This sets the links found in the navbar
   const navLinks = [
-    {
-      name: "About",
-      href: "#about",
-    },
-    {
-      name: "Skills",
-      href: "#skills",
-    },
-    {
-      name: "Projects",
-      href: "#projects",
-    },
-    {
-      name: "Experience",
-      href: "#experience",
-    },
-    {
-      name: "Resume",
-      href: "/Sthiber_Guevara_Resume.pdf",
-      external: true,
-    },
-    {
-      name: "Contact",
-      href: "#contact",
-    },
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
+    { name: "Experience", id: "experience" },
+    { name: "Contact", id: "contact" },
+    { name: "Resume", href: "/Sthiber_Guevara_Resume.pdf", external: true },
   ];
+
+  const handleScrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -78,25 +67,37 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a
-          href="#"
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="text-xl font-bold bg-gradient-to-r from-[#4ECDC4] to-[#556270] bg-clip-text text-transparent"
         >
           Sthiber
-        </a>
+        </button>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              target={link.external ? "_blank" : undefined}
-              rel={link.external ? "noopener noreferrer" : undefined}
-              className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <button
+                key={link.name}
+                onClick={() => {
+                  if (link.id) handleScrollToSection(link.id);
+                }}
+                className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300"
+              >
+                {link.name}
+              </button>
+            )
+          )}
         </nav>
         {/* Mobile Menu Button */}
         <button
