@@ -92,13 +92,18 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <a
-        href="#about"
+      <button
+        onClick={() => {
+          const el = document.getElementById("about");
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
         className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-gray-400 hover:text-[#4ECDC4] transition-colors duration-300"
       >
         <span className="text-sm mb-2">Scroll Down</span>
         <ArrowDownIcon size={20} className="animate-bounce" />
-      </a>
+      </button>
     </section>
   );
 }
