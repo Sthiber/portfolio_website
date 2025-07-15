@@ -114,16 +114,31 @@ export function Navbar() {
           className="md:hidden bg-[#161923] absolute top-full left-0 w-full py-4 shadow-lg border-t border-gray-800"
         >
           <div className="container mx-auto px-6 flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-gray-300 hover:text-[#4ECDC4] py-2 transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-[#4ECDC4] py-2 transition-colors duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <button
+                  key={link.name}
+                  onClick={() => {
+                    if (link.id) handleScrollToSection(link.id);
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-left text-gray-300 hover:text-[#4ECDC4] py-2 transition-colors duration-300"
+                >
+                  {link.name}
+                </button>
+              )
+            )}
           </div>
         </div>
       )}

@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 import { Contact } from "../components/Contact";
 function App() {
   return (
-    <div className="bg-[#0f1116] text-white min-h-screen w-full">
+    <div className="bg-[#0f1116] text-white min-h-screen w-full overflow-x-hidden">
       <Navbar />
       <main className="w-full">
         <Hero />
