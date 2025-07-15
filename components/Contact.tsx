@@ -18,10 +18,10 @@ export function Contact() {
           </p>
           <button
             onClick={handleContactClick}
-            className="bg-gradient-to-r from-[#4ECDC4] to-[#556270] hover:opacity-90 text-white font-medium px-8 py-4 rounded-lg flex items-center justify-center transition-all duration-300 mx-auto"
+            className="bg-[#1a1d25] text-gray-300 px-6 py-3 rounded-full flex items-center hover:bg-[#4ECDC4]/20 hover:text-[#4ECDC4] transition-all duration-300 mx-auto"
           >
-            <MailIcon size={20} className="mr-2" />
-            Send an email
+            <MailIcon size={18} className="mr-2" />
+            Send an Email
           </button>
         </div>
       </div>
