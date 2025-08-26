@@ -60,7 +60,7 @@ export function ProjectCard({
                 className="flex items-center text-gray-400 hover:text-[#4ECDC4] transition-colors"
               >
                 <ExternalLinkIcon size={18} className="mr-2" />
-                <span className="text-sm font-medium">Live Demo</span>
+                <span className="text-sm font-medium">Live Link</span>
               </a>
             )}
           </div>

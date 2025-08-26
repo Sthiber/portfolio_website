@@ -25,6 +25,7 @@ export const projects: Project[] = [
       { name: "Docker" },
       { name: "MySQL" },
     ],
+    liveLink: "https://cosc-4353-project.vercel.app/",
     codeLink: "https://github.com/Sthiber/COSC-4353-Project",
   },
   {
