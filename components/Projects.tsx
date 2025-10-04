@@ -19,6 +19,8 @@ export function Projects() {
               technologies={project.technologies}
               liveLink={project.liveLink}
               codeLink={project.codeLink}
+              awards={project.awards}
+              featured={project.featured}
             />
           ))}
         </div>

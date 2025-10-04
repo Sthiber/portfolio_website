@@ -1,5 +1,11 @@
 export type Technology = { name: string; color?: string };
 
+export type Award = {
+  title: string;
+  icon?: string; // emoji or icon
+  color?: string;
+};
+
 export type Project = {
   id: number;
   title: string;
@@ -8,6 +14,8 @@ export type Project = {
   technologies: Technology[];
   liveLink?: string;
   codeLink?: string;
+  awards?: Award[]; // New field for achievements
+  featured?: boolean; // Mark special projects
 };
 
 export const projects: Project[] = [
@@ -30,6 +38,17 @@ export const projects: Project[] = [
     ],
     liveLink: "https://hackrice-4afcb.web.app/welcome",
     codeLink: "https://github.com/leo2971998/HackRice25",
+    featured: true,
+    awards: [
+      {
+        title: "Top 5 @ HackRice 15",
+        color: "from-[#4ECDC4] to-[#556270]",
+      },
+      {
+        title: "Capital One Best Financial Hack",
+        color: "from-[#4ECDC4] to-[#556270]",
+      },
+    ],
   },
   {
     id: 1,
