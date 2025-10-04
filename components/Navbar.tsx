@@ -27,7 +27,7 @@ export function Navbar() {
     { name: "Projects", id: "projects" },
     { name: "Experience", id: "experience" },
     { name: "Contact", id: "contact" },
-    { name: "Resume", href: "/Sthiber_Guevara_Resume_FT.pdf", external: true },
+    { name: "Resume", href: "/Sthiber_Guevara_Resume.pdf", external: true },
   ];
 
   const handleScrollToSection = (id: string) => {
