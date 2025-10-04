@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "Swipe Coach",
     period: "September 2025",
     description:
-      "Swipe Coach is a React + Flask + MongoDB web app that helps users choose the best credit card for any purchase and manage their budgets with AI. It includes a Smart Swipe engine that instantly finds which of your cards gives the most rewards, and a recommendation system that suggests new cards based on your spending habits. The Gemini-powered budgeting assistant explains your spending trends, helps set goals, and keeps you on track. Swipe Coach placed Top 5 overall and won Capital One’s Best Financial Hack at HackRice 15 among 86 teams.",
+      "Swipe Coach is a full-stack web app built with React, Flask, and MongoDB that helps users maximize credit card rewards and manage budgets with AI. It features a Smart Swipe engine that identifies the best owned card for a purchase and suggests higher-earning alternatives, a recommendation system that analyzes spending habits to find new cards for greater rewards, and a Gemini-powered assistant for spending insights and budgeting. Top 5 at HackRice 15 and winner of Capital One’s Best Financial Hack.",
     technologies: [
       { name: "React" },
       { name: "Flask" },
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Volentra",
     period: "July 2025 - August 2025",
     description:
-      "Volentra is a full-stack volunteer matching platform built with a scrum-based development approach, emphasizing iterative progress, team collaboration, and continuous improvement. Currently in development, it focuses on streamlining community engagement through intuitive volunteer-event matching.",
+      "Volentra is a full-stack volunteer matching platform built with React, Node, Express, MySQL, and Tailwind. It connects volunteers to events that best match their skills and location through a custom matching algorithm. The platform features a responsive, user-friendly interface and containerized deployment with Docker for consistency across environments. Built with Agile practices and strong test coverage, Volentra streamlines community engagement by making it easier for volunteers to find meaningful opportunities.",
     technologies: [
       { name: "React" },
       { name: "Tailwind" },
