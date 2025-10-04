@@ -69,4 +69,12 @@ export const skills: Skill[] = [
     name: "Latex",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg",
   },
+  {
+    name: "AWS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-line-wordmark.svg",
+  },
+  {
+    name: "GoogleCloud",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+  },
 ];
