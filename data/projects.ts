@@ -51,7 +51,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Volentra",
     period: "July 2025 - August 2025",
     description:
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     codeLink: "https://github.com/Sthiber/COSC-4353-Project",
   },
   {
-    id: 2,
+    id: 3,
     title: "Decluttr",
     period: "June 2025",
     description:
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     codeLink: "https://github.com/Sthiber/Decluttr",
   },
   {
-    id: 3,
+    id: 4,
     title: "Womenwell",
     period: "August 2024 - November 2024",
     description:
