@@ -13,8 +13,28 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Swipe Coach",
+    period: "September 2025",
+    description:
+      "Swipe Coach is a React + Flask + MongoDB web app that helps users choose the best credit card for any purchase and manage their budgets with AI. It includes a Smart Swipe engine that instantly finds which of your cards gives the most rewards, and a recommendation system that suggests new cards based on your spending habits. The Gemini-powered budgeting assistant explains your spending trends, helps set goals, and keeps you on track. Swipe Coach placed Top 5 overall and won Capital One’s Best Financial Hack at HackRice 15 among 86 teams.",
+    technologies: [
+      { name: "React" },
+      { name: "Flask" },
+      { name: "MongoDB" },
+      { name: "TypeScript" },
+      { name: "Auth0" },
+      { name: "Gemini" },
+      { name: "Tailwind" },
+      { name: "Google Cloud" },
+      { name: "Docker" },
+    ],
+    liveLink: "https://hackrice-4afcb.web.app/welcome",
+    codeLink: "https://github.com/leo2971998/HackRice25",
+  },
+  {
+    id: 1,
     title: "Volentra",
-    period: "July 2025 - Present",
+    period: "July 2025 - August 2025",
     description:
       "Volentra is a full-stack volunteer matching platform built with a scrum-based development approach, emphasizing iterative progress, team collaboration, and continuous improvement. Currently in development, it focuses on streamlining community engagement through intuitive volunteer-event matching.",
     technologies: [
